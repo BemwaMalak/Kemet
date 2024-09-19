@@ -1,9 +1,9 @@
-import chemit
+import kemet
 
 while True:
 	text = input('>>>')
 	if text.strip() == "": continue
-	result, error = chemit.run('<stdin>', text)
+	result, error = kemet.run('<stdin>', text)
 
 	if error:
 		print(error.as_string())
